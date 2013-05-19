@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.dubture.ide.feature"
+      label="%featureName"
+      version="0.1.0.qualifier"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Kepler" url="http://download.eclipse.org/releases/kepler/"/>
+      <discovery label="Eclipse Platform 4.3" url="http://download.eclipse.org/eclipse/updates/4.3"/>
+   </url>
+
+   <includes
+         id="com.dubture.symfony.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.dubture.composer.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.pdtextensions.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.dubture.doctrine.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.dubture.indexing.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.dubture.twig.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="com.github.eclipsecolortheme.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="eclipse.themes.darker.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import feature="org.eclipse.equinox.p2.user.ui"/>
+      <import feature="org.eclipse.help"/>
+      <import feature="org.eclipse.platform" version="4.3.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.egit"/>
+   </requires>
+
+   <plugin
+         id="com.dubture.ide.bundle"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

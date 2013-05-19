@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<version>1.0.0-SNAPSHOT</version>
+	<groupId>com.dubture.ide</groupId>
+	<artifactId>parent</artifactId>
+	<packaging>pom</packaging>
+	<name>PEX-IDE Parent</name>
+
+	<properties>
+		<tycho-version>0.17.0</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>com.dubture.ide.product</module>
+		<module>com.dubture.ide.bundle</module>
+		<module>com.dubture.ide.feature</module>
+	</modules>
+
+
+    <repositories>
+        <repository>
+            <id>kepler</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/kepler</url>
+        </repository>
+
+        <repository>
+            <id>dltk</id>
+            <layout>p2</layout>
+            <url>http://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site</url>
+        </repository>
+
+        <repository>
+            <id>pdt</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/tools/pdt/updates/3.2-nightly</url>
+        </repository>
+
+        <repository>
+            <id>pex</id>
+            <layout>p2</layout>
+            <url>http://p2-dev.pdt-extensions.org/dev</url>
+        </repository>
+    </repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<environments>
+						<!--
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						-->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86</arch>
+  						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+  						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

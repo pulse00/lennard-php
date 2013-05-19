@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="openDocumentListener" name="Open Document Listener" schema="schema/openDocumentListener.exsd"/>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="Lennard PHP - PDT based all-in-one PHP IDE"
+            name="Lennard PHP">
+         <property
+               name="windowImages"
+               value="icons/php_icon_16.png,icons/php_icon_32.png,icons/php_icon_48.png,icons/php_icon_64.png,icons/php_icon_128.png">
+         </property>
+         <property
+               name="appName"
+               value="Lennard PHP">
+         </property>
+         <property
+               name="cssTheme"
+               value="org.eclipse.e4.ui.css.theme.e4_default">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="1,322,620,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="-2,342,624,10">
+         </property>
+         <property
+               name="introBrandingImage"
+               value="product:icons/php_icon_32.png">
+         </property>
+         <property
+               name="introTitle"
+               value="Welcome to Lennard PHP!">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="com.dubture.ide.bundle.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.configExtension">
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/sample.xml">
+      </configExtension>
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/tutorials.xml">
+      </configExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.dubture.ide.StartupListener">
+      </startup>
+   </extension>
+
+</plugin>

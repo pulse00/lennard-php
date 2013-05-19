@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="comdubtureidebundle-introExtension" style="css/sample.css" name="Sample Extension" path="tutorials/@">
+		<group style-id="content-group" id="comdubtureidebundle-introLink-group">
+       		<link label="PHP the right way" url="http://www.phptherightway.com/" id="comdubtureidebundle-introLink" style-id="content-link">
+          		<text>If you are just getting started with PHP make sure to check out phptherightway.com.</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>

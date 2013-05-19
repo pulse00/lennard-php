@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Lennard PHP" uid="pex.product.id" id="com.dubture.ide.bundle.product" application="org.eclipse.ui.ide.workbench" version="0.1.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/com.dubture.ide.bundle/icons/alt_about.gif"/>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-showsplash
+com.dubture.ide.bundle
+--launcher.XXMaxPermSize
+256m</programArgs>
+      <vmArgs>-XX:MaxPermSize=512m
+-Xms256m
+-Xmx1024m
+-Dfile.encoding=UTF-8</vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/com.dubture.ide.bundle/icons/php_icon_16.gif" i32="/com.dubture.ide.bundle/icons/php_icon_32.gif" i48="/com.dubture.ide.bundle/icons/php_icon_48.gif" i64="/com.dubture.ide.bundle/icons/php_icon_64.gif" i128="/com.dubture.ide.bundle/icons/php_icon_128.gif"/>
+
+   <splash
+      location="com.dubture.ide.bundle"
+      startupProgressRect="0,280,455,15"
+      startupMessageRect="7,220,441,20"
+      startupForegroundColor="000000" />
+   <launcher name="Lennard">
+      <linux icon="/icons/launcher.xpm"/>
+      <macosx icon="/icons/launcher.icns"/>
+      <solaris/>
+      <win useIco="true">
+         <ico path="/icons/launcher.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="com.dubture.ide.feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="osgi.instance.area.default" value="@user.home/workspaces" />
+   </configurations>
+
+</product>

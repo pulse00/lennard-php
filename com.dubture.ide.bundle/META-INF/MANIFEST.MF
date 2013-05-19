@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lennard PHP
+Bundle-SymbolicName: com.dubture.ide.bundle;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-Activator: com.dubture.ide.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.intro,
+ org.eclipse.ui.intro.universal,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.di.extensions
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: pulse00

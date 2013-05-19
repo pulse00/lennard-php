@@ -1,0 +1,5 @@
+instructions.configure=\
+addRepository(type:0,location:http${#58}//download.eclipse.org/releases/kepler);\
+addRepository(type:0,location:http${#58}//hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site);\
+addRepository(type:0,location:http${#58}//download.eclipse.org/tools/pdt/updates/3.2-nightly);\
+addRepository(type:0,location:http${#58}//p2-dev.pdt-extensions.org);
