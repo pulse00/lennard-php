@@ -1,7 +1,7 @@
 Lennard PHP
 ===========
 
-Alpha versoin of an Eclipse PDT all-in-one build, containing
+Alpha version of an Eclipse PDT all-in-one build, containing
 
 - [PDT Extensions](https://github.com/pdt-eg/Core-Plugin)
 - [Symfony plugin](http://symfony.dubture.com/)
