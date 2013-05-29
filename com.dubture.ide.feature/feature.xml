@@ -54,6 +54,14 @@
          id="eclipse.themes.darker.feature"
          version="0.0.0"/>
 
+   <includes
+         id="org.sourceforge.jsonedit.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.dadacoalition.yedit.feature"
+         version="0.0.0"/>
+
    <requires>
       <import feature="org.eclipse.equinox.p2.user.ui"/>
       <import feature="org.eclipse.help"/>
