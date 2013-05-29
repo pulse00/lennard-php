@@ -5,6 +5,23 @@
        		<link label="PHP the right way" url="http://www.phptherightway.com/" id="comdubtureidebundle-introLink" style-id="content-link">
           		<text>If you are just getting started with PHP make sure to check out phptherightway.com.</text>
        		</link>
+       		
+       		<link label="Debugging with XDebug" url="http://wiki.eclipse.org/Debugging_using_XDebug" id="comdubtureidebundle-introLink-xdebug" style-id="content-link">
+          		<text>Intermediate tutorial on how to use the XDebug debugger together with Eclipse.</text>
+       		</link>
+       		
+       		<link label="Beginners intro into Eclipse PHP tools" url="http://blog.dubture.com/2012/10/improving-your-productivity-with.html" id="comdubtureidebundle-introLink-blog" style-id="content-link">
+          		<text>Get an overview of the features and tools Eclipse PDT provides for improving your productivity for PHP projects.</text>
+       		</link>
+       		
+       		<link label="Run Integration/Unit tests within Eclipse" url="https://github.com/piece/makegood" id="comdubtureidebundle-introLink-makegood" style-id="content-link">
+          		<text>Learn how to setup your project to have fully integrate testing tools like PHPUnit.</text>
+       		</link>
+       		
+       		<link label="Integrate PHP QA tooling" url="http://www.phpsrc.org/" id="comdubtureidebundle-introLink-pti" style-id="content-link">
+          		<text>Use your favorite QA tools right from within Eclipse.</text>
+       		</link>
+       		
        	</group>
   	</extensionContent>
 </introContent>
